@@ -1,0 +1,78 @@
+:root {
+    --color-fondo: #F5F5F5;
+    --color-primario: #5C17A6;
+    --color-primario-hover: #430F7D;
+    --color-texto: #262626;
+    --familia-texto: arial;
+    --tamaño-texto: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--familia-texto);
+    font-size: var(--tamaño-texto);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-primario-hover);
+}
+
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    font-size: calc(var(--tamaño-texto) * 3);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: calc(var(--tamaño-texto) * 1.7);
+}
+
+table {
+    border: 1px solid var(--color-texto);
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    border: 1px solid var(--color-texto);
+    padding: var(--tamaño-texto);
+}
+
+td {
+    border: 1px solid var(--color-texto);
+    padding: var(--tamaño-texto);
+}
+
+tfoot {
+    font-weight: 600;
+}
+
+.contenedor {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--color-texto);
+    padding: var(--tamaño-texto);
+    border-radius: var(--tamaño-texto);
+}
+
+.grilla-equipo {
+    display: flex;
+    gap: 20px;
+}
