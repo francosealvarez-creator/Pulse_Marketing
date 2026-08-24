@@ -1,0 +1,44 @@
+:root {
+    --color-fondo: #F5F5F5;
+    --color-primario: #5C17A6;
+    --color-primario-hover: #430F7D;
+    --color-texto: #262626;
+    --familia-texto: arial;
+    --tamaño-texto: 16px;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--familia-texto);
+    font-size: var(--tamaño-texto);
+}
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-primario-hover);
+}
+
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    font-size: calc(var(--tamaño-texto) * 3);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: calc(var(--tamaño-texto) * 1.7);
+}
+
+.contenedor {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--color-texto);
+    padding: var(--tamaño-texto);
+    border-radius: var(--tamaño-texto);
+}
+
+
+
