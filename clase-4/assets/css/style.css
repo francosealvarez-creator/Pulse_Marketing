@@ -5,6 +5,7 @@
     --color-texto: #262626;
     --familia-texto: arial;
     --tamaño-texto: 16px;
+    --color-gris: #ccc;
 }
 
 * {
@@ -67,9 +68,15 @@ tfoot {
     max-width: 980px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid var(--color-texto);
     padding: var(--tamaño-texto);
+    /* border: 1px solid var(--color-texto);
+    border-radius: var(--tamaño-texto);*/
+}
+
+.cabezal{
+    background-color: var(--color-gris);
     border-radius: var(--tamaño-texto);
+    padding: var(--tamaño-texto);
 }
 
 .grilla-equipo {
