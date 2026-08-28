@@ -64,6 +64,11 @@ tfoot {
     font-weight: 600;
 }
 
+
+footer {
+    text-align: center;
+}
+
 .contenedor {
     max-width: 980px;
     margin-left: auto;
@@ -82,4 +87,10 @@ tfoot {
 .grilla-equipo {
     display: flex;
     gap: 20px;
+}
+
+.portada {
+    background-color: var(--color-gris);
+    border-radius: var(--tamaño-texto);
+    padding: var(--tamaño-texto);
 }
