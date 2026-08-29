@@ -78,7 +78,7 @@ footer {
     border-radius: var(--tamaño-texto);*/
 }
 
-.cabezal{
+.cabezal {
     background-color: var(--color-gris);
     border-radius: var(--tamaño-texto);
     padding: var(--tamaño-texto);
@@ -93,4 +93,31 @@ footer {
     background-color: var(--color-gris);
     border-radius: var(--tamaño-texto);
     padding: var(--tamaño-texto);
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.tabla-servicios {
+    display: flex;
+    justify-content: center;
+    gap: var(--tamaño-texto);
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#proyectosDestacados h2 {
+    margin: 10px;
+}
+
+#proyectosDestacados .caso-exito {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    background-color: var(--color-gris);
+    padding: 16px;
+    border-radius: 10px;
 }
