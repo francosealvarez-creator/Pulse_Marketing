@@ -1,11 +1,18 @@
 :root {
+    --color-gris: #ccc;
     --color-fondo: #F5F5F5;
     --color-primario: #5C17A6;
     --color-primario-hover: #430F7D;
     --color-texto: #262626;
     --familia-texto: arial;
     --tamaño-texto: 16px;
-    --color-gris: #ccc;
+    --gap-xs: 5px;
+    --gap-s: 10px;
+    --gap: 15px;
+    --gap-l: 20px;
+    --radius: 10px;
+    --radius-s: 5px;
+    
 }
 
 * {
@@ -33,15 +40,34 @@ a:hover {
     color: var(--color-primario-hover);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: var(--gap-l);
+}
+
 h1 {
     color: var(--color-primario);
-    text-align: center;
     font-size: calc(var(--tamaño-texto) * 3);
 }
 
 h2 {
     color: var(--color-primario);
     font-size: calc(var(--tamaño-texto) * 1.7);
+}
+
+h3 {
+    margin-bottom: var(--gap-s);
+}
+
+p {
+    margin-bottom: var(--gap);
+}
+
+ul {
+    padding-left: var(--gap-l);
+}
+
+li {
+    margin-bottom: var(--gap-xs);
 }
 
 table {
@@ -57,7 +83,7 @@ th {
 
 td {
     border: 1px solid var(--color-texto);
-    padding: var(--tamaño-texto);
+    padding: var(--gap);
 }
 
 tfoot {
@@ -69,55 +95,99 @@ footer {
     text-align: center;
 }
 
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-izq {
+    text-align: left;
+}
+
+.text-der {
+    text-align: right;
+}
+
+.lista-limpia {
+    padding-left: 0;
+    list-style: none;
+}
+
+.lista-menu {
+    display: flex;
+    gap: var(--gap-s);
+    justify-content: center;
+}
+
+.lista-menu li a {
+    text-decoration: none;
+}
+
+.lista-menu li a:hover {
+    text-decoration: underline;
+}
+
+.boton {
+    background-color: var(--color-primario);
+    color: white;
+    padding: var(--gap-s) var(--gap) var(--gap-s) var(--gap); /* Arriba, derecha, abajo e izquierda */
+    display: inline-block;
+    border-radius: var(--radius-s);
+    text-decoration: none;
+}
+
+.boton:hover {
+    color: white;
+    background-color: var(--color-primario-hover);
+}
+
 .contenedor {
     max-width: 980px;
     margin-left: auto;
     margin-right: auto;
-    padding: var(--tamaño-texto);
+    padding: var(--gap);
     /* border: 1px solid var(--color-texto);
     border-radius: var(--tamaño-texto);*/
 }
 
 .cabezal {
     background-color: var(--color-gris);
-    border-radius: var(--tamaño-texto);
-    padding: var(--tamaño-texto);
+    border-radius: var(--radius);
+    padding: var(--gap);
 }
 
-.grilla-equipo {
+.seccion {
+    padding-top: var(--gap-l);
+    padding-bottom: var(--gap-l);
+}
+
+.grilla-flex {
     display: flex;
-    gap: 20px;
+    gap: var(--gap);
 }
 
-.portada {
-    background-color: var(--color-gris);
-    border-radius: var(--tamaño-texto);
-    padding: var(--tamaño-texto);
-}
-
-#servicios h2 {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.tabla-servicios {
-    display: flex;
-    justify-content: center;
-    gap: var(--tamaño-texto);
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-#proyectosDestacados h2 {
-    margin: 10px;
-}
+/* PAGINA PORTFOLIO */
 
 #proyectosDestacados .caso-exito {
     display: flex;
     align-items: center;
-    gap: 25px;
-    margin-bottom: 30px;
+    gap: var(--gap);
+    margin-bottom: var(--gap-l);
     background-color: var(--color-gris);
-    padding: 16px;
-    border-radius: 10px;
+    padding: var(--gap);
+    border-radius: var(--radius);
+}
+
+.caso-exito img{
+    max-width: 40%;
+}
+
+/* PAGINA NOSOTROS */
+
+#nosotrosEquipoGrilla img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#nosotrosEquipoGrilla #luciaGomez img {
+    object-position: 0 20%;
 }
