@@ -182,6 +182,10 @@ footer {
     margin-bottom: var(--tamaño-texto);
 }
 
+.tabla-precios {
+    margin-bottom: var(--tamaño-texto);
+}
+
 /* PAGINA PORTFOLIO */
 
 #proyectosDestacados .caso-exito {
