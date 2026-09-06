@@ -221,3 +221,21 @@ footer {
 #historia h2 {
     margin-top: var(--tamaño-texto);
 }
+
+
+/* PAGINA BLOG */
+
+.grilla-blog {
+    display: flex;
+    gap: var(--gap);
+}
+
+.grilla-blog article h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#blog img {
+    height: 200px;
+    object-fit: cover;
+}
